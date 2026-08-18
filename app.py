@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/", methods = ["GET", "POST"])
 def index():
-    return("hi")
+    return(render_template("index.html"))
 #get from front end, post is send to front end 
 
 if __name__ == "__main__":
